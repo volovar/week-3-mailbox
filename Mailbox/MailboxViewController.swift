@@ -10,6 +10,7 @@ import UIKit
 
 class MailboxViewController: UIViewController {
     @IBOutlet weak var searchImage: UIImageView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var mailboxSuperview: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedSuperview: UIView!
@@ -64,9 +65,16 @@ class MailboxViewController: UIViewController {
         messageIconsRightView.alpha = 0
     }
 
+    @IBAction func didPressSegment(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            // do stuff here
+        } else if sender.selectedSegmentIndex == 2 {
+            // do more stuff here
+        }
+    }
+    
     @IBAction func didPanMessage(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: view)
-//        let velocity = sender.velocity(in: view)
         
         if sender.state == .began {
             UIView.animate(withDuration: 0.3, animations: {
