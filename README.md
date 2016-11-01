@@ -42,17 +42,17 @@ Time spent: `6`
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. Managing animations, things started to get messy for me after a while
-2. 
+2. Nested if/else statements, seems like there's a better way
 
 ### Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href="https://github.com/volovar/week-3-mailbox-demo/blob/master/demo/mailbox-demo.gif" target="_blank"><img src='/demo/mailbox-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Things got messy pretty quick. Lots of if/else statements to check various things to get each icon / color / position just right. I'd like to take another pass after some discussion and refactor everything to be more readable and possibly simpler. This might even be the basis to break things down and separated into a separate animation file.
 
